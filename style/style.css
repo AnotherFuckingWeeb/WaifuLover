@@ -1,0 +1,653 @@
+* {
+	margin: 0px;
+	padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    height: 10vh;
+    animation: drop 1.5s ease;
+}
+
+/*Index*/
+.logo-container {
+    display: flex;
+    flex: 1;
+}
+
+.logo-container img {
+    margin-top: 5px;
+    height: 100%;
+}
+
+.logo {
+    font-weight: 400;
+    margin: 5px;
+    animation: drop 2.5s ease;
+}
+
+span {
+	color: #ff78bb;
+}
+
+.navigation {
+    flex: 2;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+	font-size: 18px;
+	list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #5f5f79;
+}
+
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ff78bb;
+}
+
+.link:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+.change-background {
+    display: flex;
+    cursor: pointer;
+    flex: 1;
+	justify-content: flex-end;
+	transition: 0.3s;
+}
+
+.change-background:hover {
+	transform: scale(0.9);
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    min-height: 80vh;
+    margin: auto;
+    align-items: center;
+}
+
+.introduction {
+   flex: 1; 
+}
+
+.intro-text h1 {
+    font-size: 44px;
+    font-weight: 500;
+	background: linear-gradient(to right, #ff78bb, #FFF0F7);
+	background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: drop 1.5s ease;
+}
+
+.intro-text p {
+	margin-top: 5px;
+	font-size: 22px;
+    color: #585772;
+    animation: drop 1.5s ease;
+}
+
+.buttons {
+    padding: 50px 0px 0px 0px;
+	animation: drop 1.5s ease;
+}
+
+.btn-details {
+    border: 2px solid #ff69b4;
+    position: relative;
+	background: transparent;
+	color: #ff69b4;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-details:hover {
+	color: white !important;
+	background-color: transparent;
+	text-shadow: nthree;
+}
+
+
+.btn-details:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+
+.btn-details:before {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: white !important;
+	background: #ff69b4;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.btn-waifu {
+	width: 150px;
+	height: 50px;
+	border: 2px solid #ff69b4;
+	margin-left: 30px;
+	cursor: pointer;
+	background: none;
+	position: relative;
+	overflow: hidden;
+	font-size: 16px;
+	transition: 0.4s;
+	color: white;
+}
+
+.btn-waifu:hover {
+	color: #ff69b4;
+}
+
+.btn-waifu::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ff69b4;
+	z-index: -1;
+	transition: 0.4s;
+	border-radius: 0 0 50% 50%;
+	height: 100%;
+}
+
+.btn-waifu:hover::before {
+	height: 0%;
+}
+
+.btn-waifu::before {
+	top: 0;
+	border-radius: 0 0 50% 50%;
+}
+
+.btn-waifu::before {
+	height: 180%;
+}
+
+.btn-waifu:hover::before {
+	height: 0%;
+}
+
+.anime-girl {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+	height: 60vh;
+}
+
+.anime-girl img {
+    height: 100%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 3.0s ease, float 6s ease-in-out infinite;
+}
+
+.pink-circle {
+    position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+	opacity: 0.3;
+    height: 80%;
+    animation: drop 1.5s ease;
+}
+
+.medium-circle {
+	position: absolute;
+	top: 30%;
+	right: 30%;
+	z-index: -1;
+	height: 60%;
+    opacity: 3;
+    animation: drop 2.5s ease;
+}
+.small-circle {
+	position: absolute;
+	bottom: 0%;
+	left: 20%;
+    z-index: -1;
+    opacity: 5;
+}
+/*Index*/
+
+
+/*My Waifu <3*/
+.name h1{
+	font-size: 60px;
+	font-weight: 600;
+	background: linear-gradient(to right, #d21919, #e16666);
+	background-clip: unset;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: drop 1.5s ease;
+}
+
+.name p {
+	margin-top: 5px;
+	font-size: 22px;
+    color: #d21919;
+    animation: drop 1.5s ease;
+}
+
+.about {
+	width: 90%;
+    min-height: 50vh;
+    margin: 150px auto;
+	align-items: center;
+	
+}
+
+.description {
+	padding-top: 60px;
+	text-align: center;
+}
+
+.description h2 {
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.description p {
+	font-size: 17px;
+	margin: 30px;
+}
+
+.waifu-image {
+	width: 50%;
+	margin: auto;
+	height: 50vh;
+}
+
+.waifu-image img {
+	height: 80%;
+}
+
+.appearance {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 50vh;
+}
+
+.appearance img {
+	width: auto;
+	height: 70%;
+}
+/*My Waifu*/
+
+
+/*waifu list*/
+.carts {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	height: 100vh;
+}
+
+.cart {
+	margin-top: 80px;
+	width: 17%;
+	height: 460px;
+	border-radius: 12px;
+	background: white;
+	filter: drop-shadow(1px 1px 3px black);
+	-webkit-transition: all 300ms ease-in;
+    -webkit-transform: scale(0.9); 
+    -ms-transition: all 300ms ease-in;
+    -ms-transform: scale(0.9); 
+    -moz-transition: all 300ms ease-in;
+    -moz-transform: scale(0.9);
+    transition: all 300ms ease-in;
+    transform: scale(0.9);   
+}
+
+.cart:hover {
+    -webkit-transition: all 300ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 300ms ease-in;
+    -ms-transform: scale(1);   
+    -moz-transition: all 300ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 300ms ease-in;
+    transform: scale(1);
+}
+
+.title {
+	height: 10%;
+	text-align: center;
+	color: #ff69b4;
+}
+
+.profile-photo {
+	display: flex;
+	margin: auto;
+	width: 90%;
+	height: 30%;
+	align-items: center;
+}
+
+.profile-photo img {
+	width: auto;
+	margin: auto;
+	height: 80%;
+	border-radius: 50%;
+}
+
+.resume {
+	font-size: 15px;
+	width: 80%;
+	margin: auto;
+	padding-top: 20px;
+	height: 20%;
+}
+
+.resume li {
+	list-style: none;
+}
+
+.mini-description { 
+	width: 90%;
+	height: 40%;
+	margin: auto;
+	text-align: center;
+}
+
+.btn-card {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 90%;
+	margin: auto;
+	height: 20%;
+}
+
+.card-button {
+	width:140px;
+	height:50px;
+	border:2px solid #ff78bb;
+	float:left;
+	text-align:center;
+	cursor:pointer;
+	position:relative;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+
+.card-button a {
+	font-size: 17px;
+	color:#ff78bb;
+	text-decoration:none;
+	line-height:50px;
+	transition:all .5s ease;
+	z-index:2;
+	position:relative;
+}
+
+.fill {
+	width:140px;
+	height:50px;
+	top:-50px;
+	background:#ff78bb;
+	position:absolute;
+	transition:all .5s ease;
+	z-index:1;
+}
+
+.card-button:hover .fill{
+	top:0;
+}
+
+.card-button:hover a{
+	color:#fff;
+}
+
+/*waifu list*/
+
+/*Aoba WebPage*/
+.aoba h1{
+	font-size: 60px;
+	font-weight: 600;
+	background: linear-gradient(to right, #c1aee0, #cfc1e7);
+	background-clip: unset;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: drop 1.5s ease;
+}
+
+.aoba p {
+	margin-top: 5px;
+	font-size: 22px;
+    color: #cfc1e7;
+    animation: drop 1.5s ease;
+}
+/*Aoba webPage*/
+
+
+/*Tohru webpage*/
+.tohru h1 {
+	font-size: 60px;
+	font-weight: 600;
+	background: linear-gradient(to right, #FFF44F, #FFEF00);
+	background-clip: unset;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: drop 1.5s ease;
+}
+
+.tohru p {
+	margin-top: 5px;
+	font-size: 22px;
+    color: #FFF44F;
+    animation: drop 1.5s ease;
+}
+/*Tohru Webpage*/
+
+/*Aqua Webpage*/
+.aqua h1 {
+	font-size: 60px;
+	font-weight: 600;
+	background: linear-gradient(to right, #2F80ED, #56CCF2);
+	background-clip: unset;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: drop 1.5s ease;
+}
+
+.aqua p {
+	margin-top: 5px;
+	font-size: 22px;
+    color: #2F80ED;
+    animation: drop 1.5s ease;
+}
+/*Aqua webpage*/
+
+
+
+
+
+
+
+
+
+
+
+/*WHY ANIME GIRLS*/
+.banner {
+	display: flex;
+	background: url('../img/lolis.png') no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	width: 100%;
+	margin: 80px auto;
+	height: 50vh;
+	align-items: center;
+}
+
+.banner-text {
+	width: 100%;
+	font-size: 70px;
+	color: #ff78bb;
+	text-align: center;
+	animation: drop 1.5s ease;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	height: 30%;
+	font-size: 18px;
+	margin: 30px auto;	
+	text-align: center;
+}
+
+.content h1 {
+	font-size: 50px;
+}
+
+.content p {
+	font-size: 20px;
+}
+
+.icon-title {
+	text-align: center;
+	display: block;
+	width: 20%;
+	height: 10vh;
+}
+
+.icon-title img {
+	height: 80%;
+}
+
+.cute-girls {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 90%;
+	height: 30vh;
+	font-size: 18px;
+	margin: 20px auto;
+	margin-bottom: 200px;
+}
+
+.cute-girls img {
+	height: 100%;
+}
+
+.NO {
+	width: 100%;
+	height: 10%;
+	margin-top: 30px;
+	margin-bottom: 200px;
+	text-align: center;
+	font-size: 40px;
+}
+/*Animations*/
+@keyframes drop {
+	0% {
+		opacity: 0.3;
+		transform: translateY(-80px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(-80px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(-80px);
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+	.presentation {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 30px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.buttons {
+		padding: 10px 0px 0px 0px;
+	}
+
+	.anime-girl img {
+		height: 80%;
+	}
+	.small-circle,
+	.medium-circle,
+	.pink-circle {
+		opacity: 0.2;
+	}
+
+	.carts {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.cart {
+		margin-top: 80px;
+		width: 40%;
+		height: 460px;
+		border-radius: 12px;
+		background: white;
+		filter: drop-shadow(1px 1px 3px black);
+		-webkit-transition: all 300ms ease-in;
+		-webkit-transform: scale(0.9); 
+		-ms-transition: all 300ms ease-in;
+		-ms-transform: scale(0.9); 
+		-moz-transition: all 300ms ease-in;
+		-moz-transform: scale(0.9);
+		transition: all 300ms ease-in;
+		transform: scale(0.9);   
+	}
+}
+/*Animations*/
+
